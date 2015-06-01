@@ -29,24 +29,11 @@
 
         <div data-role="content" id="content2" data-scroll="y" data-handler="false">
         	<div id = "menu">
-        		자동 신고 활성화
-				<input type="checkbox" id="checkboxitem1" checked="checked">
-				
-            	<!--  <div data-role="fieldcontain" id="checkboxes2">
-				<fieldset data-type="vertical" data-role="controlgroup"><input type="checkbox" id="checkboxitem2"></fieldset>
-				</div>-->
-            <h1>hi This is Guardizen
-            hi This is Guardizen
-            hi This is Guardizen
-            hi This is Guardizen
-            hi This is Guardizen
-            hi This is Guardizen
-            hi This is Guardizen
-            hi This is Guardizen
-            hi This is Guardizen
-            </h1>
+        		<input type="checkbox" name="checksearch" id="checksearch" onchange="setDiscovery();"/>
+        		<label for="checksearch">주변 전자발찌 착용자 탐색</label><br>
+				<div data-role="button" id="button3" onclick="requestDB();">범죄자 정보 갱신</div>
             </div>
-        <div data-role="button" id="button1" data-icon="alert" data-iconpos="right" onclick="bluetoothClick();">Report</div>
+        
         </div>
     </div><!-- /page -->
 </body>

@@ -6,10 +6,15 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<script src="./lib/jquery.js"></script>
 	<script type="text/javascript" src="./lib/tau/mobile/js/tau.js" data-build-remove="false"></script>
+	
+	
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.1/jquery.xdomainrequest.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.1/jquery.xdomainrequest.min.js"></script>
+	
 	
 	<link rel="stylesheet"  href="./lib/tau/mobile/theme/changeable/tau.css">
 	<script src="./js/main.js"></script>
@@ -36,9 +41,21 @@
 
         <div data-role="content" id="content2" data-scroll="y" data-handler="false">
         	<div id = "menu">
-            <h1>Phone</h1>
+            Phone: <input type="text" id="phoneNum">
+            <div id="registNum">
+            <input type="checkbox" name="autosearch" id="check-call">
+				<label for="check-call">Call</label>
+				<input type="checkbox" name="autosearch" id="check-sms" checked="checked"/>
+				<label for="check-sms">SMS</label>
+            <div data-role="button" id="button1" onclick="addNum();">Regist</div></div>
+            <ul data-role="listview" id="list2">
+                <li id="listitem1">123-4567-8901</li>
+            </ul>
             </div>
-        <div data-role="button" id="postdata" data-icon="alert" data-iconpos="right" onclick="test();">Test</div>
+       <!-- <div data-role="button" id="postdata" data-icon="alert" data-iconpos="right" onclick="paycheck2();">Test</div>
+        <div data-role="button" id="button1" data-icon="alert" data-iconpos="right" onclick="requestDB();">전자발찌 주소 동기화</div>
+         <div data-role="button" id="button2" data-icon="alert" data-iconpos="right" onclick="fileCheck();">전자발찌 ReadFile</div>
+         -->
         </div>
     </div><!-- /page -->
 </body>
